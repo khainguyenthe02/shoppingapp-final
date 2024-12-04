@@ -1,0 +1,163 @@
+.header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header span {
+  color: black;
+  margin-right: 10px;
+}
+.user-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-name {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content button {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+.logo img {
+  margin-left: 20px;
+  height: 80px; 
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.search-container input {
+  background-color: #2D3E76;
+  padding: 10px;
+  color: white;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.search-container input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.user {
+  width: 40px;
+  height: 40px; 
+  background-color: #2D3E76; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.user-icon {
+  width: 28px;
+  height: 28px;
+}
+.search {
+  width: 40px;
+  height: 40px;
+  background-color: #2D3E76;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search img {
+  width: 20px;
+  height: 20px;
+}
+.person {
+  display: flex;
+
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .search-container {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  }
+  .user {
+    align-items: center;
+    align-content: center;
+  }
+  .logo img {
+    height: 60px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .search-container input {
+    padding: 8px;
+  }
+
+  .user {
+    width: 35px;
+    height: 35px;
+  }
+
+  .search {
+    width: 35px;
+    height: 35px;
+  }
+}
